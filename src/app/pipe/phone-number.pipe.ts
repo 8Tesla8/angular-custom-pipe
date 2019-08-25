@@ -26,5 +26,4 @@ export class PhoneNumberPipe implements PipeTransform {
 
     return "";
   }
-  //+380 651 923 347
 }

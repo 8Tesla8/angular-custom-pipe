@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PhoneNumberPipe } from './pipe/phone-number.pipe';
+import { AmountPipe } from './pipe/amount.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PhoneNumberPipe
+    PhoneNumberPipe,
+    AmountPipe
   ],
   imports: [
     BrowserModule

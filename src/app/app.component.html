@@ -1,12 +1,18 @@
 
-<table>
+<table class="">
   <tr>
     <th>Name</th>
+    <th>Money</th> 
+    <th>TV</th> 
+    <th>Tablet</th> 
     <th>Phone</th> 
   </tr>
 
   <tr *ngFor="let user of users" >
     <td>{{ user.name }}</td>
+    <td>{{ user.money }}$</td>
+    <td>{{ user.money | amount:540:'TV' }}</td>
+    <td>{{ user.money | amount:102:'Tablet' }}</td>
     <td>{{ user.phone | phoneNumber }}</td>
   </tr>
 
