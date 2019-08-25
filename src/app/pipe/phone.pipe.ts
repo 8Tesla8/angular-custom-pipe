@@ -3,8 +3,8 @@ import { Pipe, PipeTransform } from "@angular/core";
 @Pipe({
   name: "phoneNumber"
 })
-export class PhoneNumberPipe implements PipeTransform {
-  transform(value: string, args?: any): string {
+export class PhonePipe implements PipeTransform {
+  transform(value: string): string {
     if (value !== undefined && value !== null && value !== "") {
       let result = "";
 
