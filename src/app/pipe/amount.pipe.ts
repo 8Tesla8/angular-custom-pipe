@@ -6,6 +6,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class AmountPipe implements PipeTransform {
 
   transform(value: number, price: number, cargo?: string): string {
+    if(cargo === undefined || cargo === null){
+      cargo = "";
+    }
+
     if (value === undefined || value === null) {
       return "";
     }
@@ -23,5 +27,4 @@ export class AmountPipe implements PipeTransform {
 
     return count + " " + cargo;
   }
-
 }
